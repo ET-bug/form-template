@@ -1,0 +1,9 @@
+@font-face {
+    font-family: logo-font;
+    src: url(../resources/font-staatliches/font-staatliches.ttf);
+}
+
+.logo {
+    font-family: logo-font, sans-serif;
+    font-size: 36px;
+}
