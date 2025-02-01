@@ -27,18 +27,23 @@ h1 {
 
 h2 {
     font-size: var(--h2-text);
+    padding-top: 5px;
 }
 
 h3 {
     font-size: var(--h3-text);
+    padding-top: 5px;
 }
 
 .large-text {
     font-size: var(--h4-text);
+    padding-top: 5px;
+    color: gray;
 }
 
 .small-text {
     font-size: var(--h5-text);
+    padding-top: 5px;
 }
 
 
@@ -48,7 +53,17 @@ body * {
     margin: 0px;
     font-family: "roboto", sans-serif;
     /*to be removed - for visibility only*/
-    outline: 2px solid black;
+    /*outline: 2px solid black; */
+    line-height: 1.1;
+}
+
+input {
+    width: 800px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--main-background-color);
+    padding: 20px;
+    border: none;
 }
 
 .root-div {
@@ -68,12 +83,15 @@ body * {
     background-color: var(--side-bar-background-color);
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
+    padding: 40px;
+    padding-top: 15px;
 }
 
 .side-bar-sections {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 /*top nav section*/
@@ -101,6 +119,7 @@ body * {
 .left-header {
     margin-right: auto;
     display: flex;
+    align-items: center;
 }
 
 .right-header {
@@ -110,6 +129,21 @@ body * {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
+}
+
+.welcome-message {
+    padding-left: 20px;
+}
+
+.large-profile {
+    height: 8vh;
+    aspect-ratio: 1/1; 
+    border-radius: 100px;
+}
+
+.small-profile {
+    width: 5vh;
+    border-radius: 100px;
 }
 
 .projects {
@@ -144,6 +178,7 @@ body * {
     font-size: var(--h2-text);
     margin-bottom: auto;
     padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .project-box {
@@ -215,6 +250,19 @@ body * {
     border-left: 10px solid var(--project-card-border-color);
 }
 
+.svg-logo{
+    width: var(--h1-text);
+    height: var(--h1-text);
+    color: var(--highlight-text-color);
+}
+
+.svg-side-bar{
+    width: var(--h2-text);
+    height: var(--h2-text);
+    color: var(--highlight-text-color);
+    align-items: center;
+}
+
 .button-box {
     width: 150px;
     height: auto;
@@ -228,6 +276,7 @@ body * {
 button {
     color: var(--highlight-text-color);
     font-weight: var(--bold-text);
+    border: none;
 }
 
 .sidebar-button .logo-button {
@@ -239,6 +288,7 @@ button {
     background-color: inherit;
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .action-button {
@@ -257,5 +307,5 @@ button {
     padding: 5px;
     background-color: inherit;
     color: black;
-    flex: 1;
+    flex:1;
 }
